@@ -22,10 +22,11 @@ struct PostView: View {
         VStack(alignment: .leading) {
             HStack {
                 // Replace "profile_image" with the actual profile image
-                Image("profile_image")
-                    .resizable()
+                CustomButton(image: Image(systemName: "person.circle"), foregroundColor: .mint, action: {
+                    print("Show profile screen")
+                })
                     .frame(width: 50, height: 50)
-                    .clipShape(Circle())
+                    .padding(.trailing,10)
                 VStack(alignment: .leading) {
                     Text(post.username)
                         .font(.headline)
