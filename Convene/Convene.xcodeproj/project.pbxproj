@@ -19,9 +19,10 @@
 		A22A1E9C2C36E97B00E3FF4D /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A22A1E9B2C36E97B00E3FF4D /* ViewInspector */; };
 		A22A1E9F2C36E99800E3FF4D /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */; };
 		A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA22C36ECCD00E3FF4D /* PostView.swift */; };
-		A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */; };
+		A22A1EA62C36EEDD00E3FF4D /* ButtonWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA52C36EEDD00E3FF4D /* ButtonWithImage.swift */; };
 		A22A1EA82C36F3CD00E3FF4D /* ButtonWithTextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */; };
 		A22A1EAC2C37000400E3FF4D /* PreferenceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EAB2C37000400E3FF4D /* PreferenceView.swift */; };
+		A22A1EAE2C372EDC00E3FF4D /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EAD2C372EDC00E3FF4D /* TextButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +57,10 @@
 		A22A1E982C36E84000E3FF4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		A22A1EA22C36ECCD00E3FF4D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
-		A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A22A1EA52C36EEDD00E3FF4D /* ButtonWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithImage.swift; sourceTree = "<group>"; };
 		A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTextImage.swift; sourceTree = "<group>"; };
 		A22A1EAB2C37000400E3FF4D /* PreferenceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceView.swift; sourceTree = "<group>"; };
+		A22A1EAD2C372EDC00E3FF4D /* TextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,8 +202,9 @@
 		A22A1EA42C36EEC400E3FF4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */,
+				A22A1EA52C36EEDD00E3FF4D /* ButtonWithImage.swift */,
 				A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */,
+				A22A1EAD2C372EDC00E3FF4D /* TextButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -363,8 +366,9 @@
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
 				A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */,
 				A22A1E6A2C36E36800E3FF4D /* ConveneApp.swift in Sources */,
+				A22A1EAE2C372EDC00E3FF4D /* TextButton.swift in Sources */,
 				A22A1EA82C36F3CD00E3FF4D /* ButtonWithTextImage.swift in Sources */,
-				A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */,
+				A22A1EA62C36EEDD00E3FF4D /* ButtonWithImage.swift in Sources */,
 				A22A1EAC2C37000400E3FF4D /* PreferenceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

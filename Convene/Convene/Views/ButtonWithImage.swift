@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomButton: View {
+struct ButtonWithImage: View {
     @State var image: Image
     var foregroundColor: Color
     var action: () -> Void
@@ -26,5 +26,5 @@ struct CustomButton: View {
 }
 
 #Preview {
-    CustomButton(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red, action: {})
+    ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red, action: {})
 }

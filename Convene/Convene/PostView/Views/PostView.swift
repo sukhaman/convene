@@ -22,7 +22,7 @@ struct PostView: View {
         VStack(alignment: .leading) {
             HStack {
                 // Replace "profile_image" with the actual profile image
-                CustomButton(image: Image(systemName: "person.circle"), foregroundColor: .mint, action: {
+                ButtonWithImage(image: Image(systemName: "person.circle"), foregroundColor: .mint, action: {
                     print("Show profile screen")
                 })
                     .frame(width: 50, height: 50)
@@ -41,10 +41,10 @@ struct PostView: View {
                 .font(.body)
                 .padding(.vertical, 5)
             HStack {
-                CustomButton(image: Image(systemName: "hand.thumbsup"),foregroundColor: .black) {
+                ButtonWithImage(image: Image(systemName: "hand.thumbsup"),foregroundColor: .black) {
                     print("Post liked")
                 }
-                CustomButton(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red) {
+                ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red) {
                     print("Post disliked")
                 }
                 Spacer()

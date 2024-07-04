@@ -86,6 +86,9 @@ struct PreferenceView: View {
                         .background(Color(.systemGray6))
                         .cornerRadius(10)
                     }
+                    TextButton(title: "Save", foregroundColor: .black, action: {
+                        
+                    })
                 }
                 .padding()
             }
