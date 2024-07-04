@@ -14,6 +14,7 @@
 		A22A1E7B2C36E36C00E3FF4D /* ConveneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E7A2C36E36C00E3FF4D /* ConveneTests.swift */; };
 		A22A1E852C36E36C00E3FF4D /* ConveneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E842C36E36C00E3FF4D /* ConveneUITests.swift */; };
 		A22A1E872C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E862C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift */; };
+		A22A1E942C36E6BD00E3FF4D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22A1E932C36E6BD00E3FF4D /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A22A1E802C36E36C00E3FF4D /* ConveneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConveneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A22A1E842C36E36C00E3FF4D /* ConveneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveneUITests.swift; sourceTree = "<group>"; };
 		A22A1E862C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveneUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A22A1E932C36E6BD00E3FF4D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				A22A1E692C36E36800E3FF4D /* ConveneApp.swift */,
 				A22A1E6B2C36E36800E3FF4D /* ContentView.swift */,
 				A22A1E6D2C36E36C00E3FF4D /* Assets.xcassets */,
+				A22A1E932C36E6BD00E3FF4D /* Colors.xcassets */,
 				A22A1E6F2C36E36C00E3FF4D /* Preview Content */,
 			);
 			path = Convene;
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22A1E942C36E6BD00E3FF4D /* Colors.xcassets in Resources */,
 				A22A1E712C36E36C00E3FF4D /* Preview Assets.xcassets in Resources */,
 				A22A1E6E2C36E36C00E3FF4D /* Assets.xcassets in Resources */,
 			);
