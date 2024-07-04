@@ -19,6 +19,7 @@
 		A22A1E9C2C36E97B00E3FF4D /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A22A1E9B2C36E97B00E3FF4D /* ViewInspector */; };
 		A22A1E9F2C36E99800E3FF4D /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */; };
 		A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA22C36ECCD00E3FF4D /* PostView.swift */; };
+		A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		A22A1E982C36E84000E3FF4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		A22A1EA22C36ECCD00E3FF4D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		A22A1E682C36E36800E3FF4D /* Convene */ = {
 			isa = PBXGroup;
 			children = (
+				A22A1EA42C36EEC400E3FF4D /* Views */,
 				A22A1EA02C36EC0B00E3FF4D /* PostView */,
 				A22A1E962C36E82F00E3FF4D /* HomeView */,
 				A22A1E952C36E77000E3FF4D /* SupportingFiles */,
@@ -185,6 +188,14 @@
 			isa = PBXGroup;
 			children = (
 				A22A1EA22C36ECCD00E3FF4D /* PostView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A22A1EA42C36EEC400E3FF4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -330,6 +341,7 @@
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
 				A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */,
 				A22A1E6A2C36E36800E3FF4D /* ConveneApp.swift in Sources */,
+				A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

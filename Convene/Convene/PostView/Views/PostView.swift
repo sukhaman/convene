@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Thread: Identifiable {
+struct Post: Identifiable {
     let id = UUID()
     let username: String
     let time: String
@@ -16,7 +16,7 @@ struct Thread: Identifiable {
 }
 
 struct PostView: View {
-    let thread: Thread
+    let post: Post
     var body: some View {
        
         VStack(alignment: .leading) {
@@ -27,27 +27,27 @@ struct PostView: View {
                     .frame(width: 50, height: 50)
                     .clipShape(Circle())
                 VStack(alignment: .leading) {
-                    Text(thread.username)
+                    Text(post.username)
                         .font(.headline)
-                    Text(thread.time)
+                    Text(post.time)
                         .font(.subheadline)
                 }
                 Spacer()
                 Image(systemName: "flame.fill")
                     .foregroundColor(.red)
             }
-            Text(thread.message)
+            Text(post.message)
                 .font(.body)
                 .padding(.vertical, 5)
             HStack {
-                Button(action: {}) {
-                    Image(systemName: "hand.thumbsup")
+                CustomButton(image: Image(systemName: "hand.thumbsup"),foregroundColor: .black) {
+                    print("Post liked")
                 }
-                Button(action: {}) {
-                    Image(systemName: "hand.thumbsdown")
+                CustomButton(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red) {
+                    print("Post disliked")
                 }
                 Spacer()
-                Text("\(thread.replies) Replies")
+                Text("\(post.replies) Replies")
             }
         }
         .padding()
@@ -57,5 +57,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView(thread: Thread(username: "Freeman", time: " 23 mins ago", message: "You are what you do. What makes you stop taking risks? I'm always afraid of the consequences of my actions.", replies: 124))
+    PostView(post: Post(username: "Freeman", time: " 23 mins ago", message: "You are what you do. What makes you stop taking risks? I'm always afraid of the consequences of my actions.", replies: 124))
 }
