@@ -47,7 +47,9 @@ struct PostView: View {
                     print("Post disliked")
                 }
                 Spacer()
-                Text("\(post.replies) Replies")
+                ButtonWithTextImage(image: Image(systemName: "message.badge.waveform"),text: "\(post.replies) Replies", imageColor: .purple, textColor: .black) {
+                    print("Show replies")
+                }
             }
         }
         .padding()

@@ -20,6 +20,7 @@
 		A22A1E9F2C36E99800E3FF4D /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */; };
 		A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA22C36ECCD00E3FF4D /* PostView.swift */; };
 		A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */; };
+		A22A1EA82C36F3CD00E3FF4D /* ButtonWithTextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
 		A22A1EA22C36ECCD00E3FF4D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTextImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				A22A1EA52C36EEDD00E3FF4D /* CustomButton.swift */,
+				A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
 				A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */,
 				A22A1E6A2C36E36800E3FF4D /* ConveneApp.swift in Sources */,
+				A22A1EA82C36F3CD00E3FF4D /* ButtonWithTextImage.swift in Sources */,
 				A22A1EA62C36EEDD00E3FF4D /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
