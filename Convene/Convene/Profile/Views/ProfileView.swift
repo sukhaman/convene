@@ -12,6 +12,7 @@ struct Profile {
     var age: Int
     var bio: String
     var interests: [Interest]
+    var events: [Event]
 }
 
 struct Interest: Identifiable {
@@ -19,6 +20,12 @@ struct Interest: Identifiable {
     let name: String
     var isSelected: Bool
     var icon: String
+}
+
+struct Event: Identifiable {
+    let id = UUID()
+    let name: String
+    var date: String
 }
 
 
@@ -36,24 +43,17 @@ struct ProfileView: View {
             Interest(name: "Science Museum", isSelected: true, icon: "book"),
             Interest(name: "Workshop", isSelected: true, icon: "hammer"),
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),
-            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
-            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
-            Interest(name: "Science Museum", isSelected: true, icon: "book"),
-            Interest(name: "Workshop", isSelected: true, icon: "hammer"),
-            Interest(name: "Café", isSelected: true, icon: "fork.knife"),
-            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
-            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
-            Interest(name: "Science Museum", isSelected: true, icon: "book"),
-            Interest(name: "Workshop", isSelected: true, icon: "hammer"),
-            Interest(name: "Café", isSelected: true, icon: "fork.knife"),
-            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
-            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
-            Interest(name: "Science Museum", isSelected: true, icon: "book")
-        ]
+            Interest(name: "National Cuisine", isSelected: true, icon: "globe")
+        ],
+        events: [
+                   Event(name: "Music Concert", date: "2024-07-10"),
+                   Event(name: "Art Workshop", date: "2024-07-15"),
+                   Event(name: "Food Festival", date: "2024-08-01")
+               ]
     )
-    
+    let segments = ["About Me","Interests", "Events"]
     @State private var isEditing = false
-    
+    @State private var selectedSegment = 0
     var body: some View {
         NavigationStack {
             ScrollView {
@@ -63,42 +63,24 @@ struct ProfileView: View {
                         .aspectRatio(contentMode: .fill)
                         .frame(height: 200)
                         .clipped()
-                        .cornerRadius(10)
                     
-                    Text("\(profile.name), \(profile.age)")
-                        .font(.title)
-                        .bold()
                     
-                    Text(profile.bio)
-                        .font(.subheadline)
-                        .padding(.top, 5)
-                    InterestView(profile: profile)
+                    VStack {
 
+                        SegmentInfoView(selectedSegment: $selectedSegment) // Adjust height as needed
+
+                        if selectedSegment == 0 {
+                                AboutMeView(profile: profile)
+                        } else if selectedSegment == 1 {
+                            InterestsView(profile: profile)
+                        } else if selectedSegment == 2 {
+                            ProfileEventView(events: profile.events)
+                        }
+                        
+                        Spacer()
+                    }
                 }
                 .navigationBarTitle("Profile", displayMode: .inline)
-            }
-        }
-    }
-}
-
-struct InterestView: View {
-    var profile: Profile
-    var body: some View {
-        VStack {
-            Text("Interests")
-                .font(.headline)
-                .padding(.top, 10)
-            
-            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100), spacing: 10)], spacing: 10) {
-                ForEach(profile.interests.filter { $0.isSelected }) { interest in
-                    HStack {
-                        Image(systemName: interest.icon)
-                        Text(interest.name)
-                    }
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(10)
-                }
             }
         }
     }

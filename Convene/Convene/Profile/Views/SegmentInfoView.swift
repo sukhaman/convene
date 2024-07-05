@@ -32,6 +32,27 @@ struct SegmentInfoView: View {
     }
 }
 
+struct SegmentButton: View {
+    @Binding var selectedSegment: Int
+    let index: Int
+    let title: String
+    let width: CGFloat
+
+    var body: some View {
+        Button(action: {
+            self.selectedSegment = self.index
+        }) {
+            Text(title)
+                .frame(width: width, height: 40)
+                .background(.white)
+                .foregroundColor(Color.purple)
+                .opacity(self.selectedSegment == self.index ? 1  : 0.5)
+        
+                
+        }
+    }
+}
+
 #Preview {
     SegmentInfoView(selectedSegment: .constant(0))
 }
