@@ -28,6 +28,8 @@
 		A22A1EFD2C385F6900E3FF4D /* InterestsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EFC2C385F6900E3FF4D /* InterestsView.swift */; };
 		A22A1EFF2C385FCF00E3FF4D /* ProfileEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EFE2C385FCF00E3FF4D /* ProfileEventView.swift */; };
 		A22A1F012C38604700E3FF4D /* SegmentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F002C38604700E3FF4D /* SegmentInfoView.swift */; };
+		A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */; };
+		A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F072C38660300E3FF4D /* EventViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		A22A1EFC2C385F6900E3FF4D /* InterestsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestsView.swift; sourceTree = "<group>"; };
 		A22A1EFE2C385FCF00E3FF4D /* ProfileEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEventView.swift; sourceTree = "<group>"; };
 		A22A1F002C38604700E3FF4D /* SegmentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentInfoView.swift; sourceTree = "<group>"; };
+		A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
+		A22A1F072C38660300E3FF4D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 		A22A1E682C36E36800E3FF4D /* Convene */ = {
 			isa = PBXGroup;
 			children = (
+				A22A1F022C3864B100E3FF4D /* Event */,
 				A22A1EAF2C373EA000E3FF4D /* Profile */,
 				A22A1EA92C36FEF000E3FF4D /* Preferences */,
 				A22A1EA42C36EEC400E3FF4D /* Views */,
@@ -254,6 +259,31 @@
 				A22A1F002C38604700E3FF4D /* SegmentInfoView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A22A1F022C3864B100E3FF4D /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F062C3865BB00E3FF4D /* ViewModel */,
+				A22A1F032C3864B800E3FF4D /* Views */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		A22A1F032C3864B800E3FF4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A22A1F062C3865BB00E3FF4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F072C38660300E3FF4D /* EventViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -406,6 +436,8 @@
 				A22A1EFB2C385EE100E3FF4D /* AboutMeView.swift in Sources */,
 				A22A1EFD2C385F6900E3FF4D /* InterestsView.swift in Sources */,
 				A22A1EAC2C37000400E3FF4D /* PreferenceView.swift in Sources */,
+				A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */,
+				A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

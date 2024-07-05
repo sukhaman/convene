@@ -23,11 +23,18 @@ struct Interest: Identifiable {
 }
 
 struct Event: Identifiable {
-    let id = UUID()
-    let name: String
+    var id:UUID? = nil
+    var name: String
     var date: String
+    var time: String
+    var duration: String
+    var location: String
+    var guests: [Guest]
 }
 
+struct Guest: Codable {
+    var id: [Int]
+}
 
 struct ProfileView: View {
     @State private var profile = Profile(
@@ -46,9 +53,9 @@ struct ProfileView: View {
             Interest(name: "National Cuisine", isSelected: true, icon: "globe")
         ],
         events: [
-                   Event(name: "Music Concert", date: "2024-07-10"),
-                   Event(name: "Art Workshop", date: "2024-07-15"),
-                   Event(name: "Food Festival", date: "2024-08-01")
+            Event(name: "Music Concert", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: []),
+            Event(name: "Art Workshop", date: "2024-07-15", time: "03:00", duration: "5 Hours", location: "", guests: []),
+            Event(name: "Food Festival", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [])
                ]
     )
     let segments = ["About Me","Interests", "Events"]

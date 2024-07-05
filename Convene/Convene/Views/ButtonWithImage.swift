@@ -10,6 +10,7 @@ import SwiftUI
 struct ButtonWithImage: View {
     @State var image: Image
     var foregroundColor: Color
+    var backgrounColor: Color
     var action: () -> Void
     var body: some View {
         Button(action: action) {
@@ -18,7 +19,7 @@ struct ButtonWithImage: View {
                         .frame(width: 24, height: 24)
                         .foregroundColor(foregroundColor)
                         .padding()
-                        .background(Color.white)
+                        .background(backgrounColor)
                         .clipShape(Circle())
                         .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
                 }
@@ -26,5 +27,5 @@ struct ButtonWithImage: View {
 }
 
 #Preview {
-    ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red, action: {})
+    ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red,backgrounColor: .white, action: {})
 }
