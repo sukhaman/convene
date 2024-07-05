@@ -33,6 +33,21 @@ struct ProfileView: View {
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),
             Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
             Interest(name: "Observatory", isSelected: true, icon: "telescope"),
+            Interest(name: "Science Museum", isSelected: true, icon: "book"),
+            Interest(name: "Workshop", isSelected: true, icon: "hammer"),
+            Interest(name: "Café", isSelected: true, icon: "fork.knife"),
+            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
+            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
+            Interest(name: "Science Museum", isSelected: true, icon: "book"),
+            Interest(name: "Workshop", isSelected: true, icon: "hammer"),
+            Interest(name: "Café", isSelected: true, icon: "fork.knife"),
+            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
+            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
+            Interest(name: "Science Museum", isSelected: true, icon: "book"),
+            Interest(name: "Workshop", isSelected: true, icon: "hammer"),
+            Interest(name: "Café", isSelected: true, icon: "fork.knife"),
+            Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
+            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
             Interest(name: "Science Museum", isSelected: true, icon: "book")
         ]
     )
@@ -41,23 +56,50 @@ struct ProfileView: View {
     
     var body: some View {
         NavigationStack {
-            VStack(alignment: .leading) {
-                Image("profile_pic")
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .frame(height: 200)
-                    .clipped()
-                    .cornerRadius(10)
-                
-                Text("\(profile.name), \(profile.age)")
-                    .font(.title)
-                    .bold()
-                
-                Text(profile.bio)
-                    .font(.subheadline)
-                    .padding(.top, 5)
+            ScrollView {
+                VStack(alignment: .leading) {
+                    Image("profile_pic")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(height: 200)
+                        .clipped()
+                        .cornerRadius(10)
+                    
+                    Text("\(profile.name), \(profile.age)")
+                        .font(.title)
+                        .bold()
+                    
+                    Text(profile.bio)
+                        .font(.subheadline)
+                        .padding(.top, 5)
+                    InterestView(profile: profile)
+
+                }
+                .navigationBarTitle("Profile", displayMode: .inline)
             }
-            .navigationBarTitle("Profile", displayMode: .inline)
+        }
+    }
+}
+
+struct InterestView: View {
+    var profile: Profile
+    var body: some View {
+        VStack {
+            Text("Interests")
+                .font(.headline)
+                .padding(.top, 10)
+            
+            LazyVGrid(columns: [GridItem(.adaptive(minimum: 100), spacing: 10)], spacing: 10) {
+                ForEach(profile.interests.filter { $0.isSelected }) { interest in
+                    HStack {
+                        Image(systemName: interest.icon)
+                        Text(interest.name)
+                    }
+                    .padding()
+                    .background(Color.gray.opacity(0.2))
+                    .cornerRadius(10)
+                }
+            }
         }
     }
 }
