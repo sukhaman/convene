@@ -30,6 +30,7 @@
 		A22A1F012C38604700E3FF4D /* SegmentInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F002C38604700E3FF4D /* SegmentInfoView.swift */; };
 		A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */; };
 		A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F072C38660300E3FF4D /* EventViewModel.swift */; };
+		A22A1F0A2C399A2800E3FF4D /* EventGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F092C399A2800E3FF4D /* EventGuestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		A22A1F002C38604700E3FF4D /* SegmentInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentInfoView.swift; sourceTree = "<group>"; };
 		A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 		A22A1F072C38660300E3FF4D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		A22A1F092C399A2800E3FF4D /* EventGuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventGuestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +276,7 @@
 			isa = PBXGroup;
 			children = (
 				A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */,
+				A22A1F092C399A2800E3FF4D /* EventGuestView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 				A22A1EB22C373F0500E3FF4D /* ProfileView.swift in Sources */,
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
 				A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */,
+				A22A1F0A2C399A2800E3FF4D /* EventGuestView.swift in Sources */,
 				A22A1E6A2C36E36800E3FF4D /* ConveneApp.swift in Sources */,
 				A22A1EAE2C372EDC00E3FF4D /* TextButton.swift in Sources */,
 				A22A1F012C38604700E3FF4D /* SegmentInfoView.swift in Sources */,

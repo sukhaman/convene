@@ -32,8 +32,10 @@ struct Event: Identifiable {
     var guests: [Guest]
 }
 
-struct Guest: Codable {
-    var id: [Int]
+struct Guest: Identifiable {
+    let id = UUID()
+    let name: String
+    let imageName: String
 }
 
 struct ProfileView: View {

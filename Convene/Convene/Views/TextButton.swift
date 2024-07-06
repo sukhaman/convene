@@ -15,7 +15,6 @@ struct TextButton: View {
         Button(action: action) {
                         Text(title)
                         .foregroundColor(foregroundColor)
-                        .frame(maxWidth: .infinity)
                         .padding()
                         .background(Color.white)
                         .clipShape(RoundedRectangle(cornerRadius: 10))
