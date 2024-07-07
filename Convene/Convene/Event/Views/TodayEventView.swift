@@ -92,6 +92,14 @@ struct EventRow: View {
                     }
                     
                     SegmentInfoView(segments: ["Overview", "Participant", "Equipment", "Schedule"], selectedSegment: $selectedSegment)
+                    
+                    if selectedSegment == 0 {
+                           EventDescriptionView(event: event)
+                    } else if selectedSegment == 1 {
+                        
+                    } else if selectedSegment == 2 {
+                        
+                    }
                 }
                 .padding()
                 .background(Color.white)

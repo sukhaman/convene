@@ -17,9 +17,9 @@ class EventViewModel: ObservableObject {
            Guest(name: "Charlie", imageName: "profile_pic")
        ]
     @Published var events: [Event] = [
-        Event(url:"austin-neill-hgO1wFPXl3I-unsplash",name: "Music Concert", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
-        Event(url:"debby-hudson-3q05_K3eJxM-unsplash",name: "Art Workshop", date: "2024-07-15", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
-        Event(url:"stefano-girardelli-qUnLMCQjv2k-unsplash",name: "Food Festival", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic"))
+        Event(url:"austin-neill-hgO1wFPXl3I-unsplash",name: "Music Concert",description: "So just what is an event description? In a nutshell, it’s a piece of copy that tells people the basic information they need to know to decide whether or not they want to attend the event. It should always include the 5 W’s (who, what, when, where, and why) and, if necessary, an H for how.", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
+        Event(url:"debby-hudson-3q05_K3eJxM-unsplash",name: "Art Workshop",description: "So just what is an event description? In a nutshell, it’s a piece of copy that tells people the basic information they need to know to decide whether or not they want to attend the event. It should always include the 5 W’s (who, what, when, where, and why) and, if necessary, an H for how.", date: "2024-07-15", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
+        Event(url:"stefano-girardelli-qUnLMCQjv2k-unsplash",name: "Food Festival",description: "So just what is an event description? In a nutshell, it’s a piece of copy that tells people the basic information they need to know to decide whether or not they want to attend the event. It should always include the 5 W’s (who, what, when, where, and why) and, if necessary, an H for how.", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic"))
            ]
        func removeGuest(at index: Int) {
            guests.remove(at: index)

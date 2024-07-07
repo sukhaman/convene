@@ -32,6 +32,7 @@
 		A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F072C38660300E3FF4D /* EventViewModel.swift */; };
 		A22A1F0A2C399A2800E3FF4D /* EventGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F092C399A2800E3FF4D /* EventGuestView.swift */; };
 		A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */; };
+		A22A1F0E2C3B2BF400E3FF4D /* EventDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		A22A1F072C38660300E3FF4D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		A22A1F092C399A2800E3FF4D /* EventGuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventGuestView.swift; sourceTree = "<group>"; };
 		A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEventView.swift; sourceTree = "<group>"; };
+		A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -280,6 +282,7 @@
 				A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */,
 				A22A1F092C399A2800E3FF4D /* EventGuestView.swift */,
 				A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */,
+				A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -429,6 +432,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A22A1F0E2C3B2BF400E3FF4D /* EventDescriptionView.swift in Sources */,
 				A22A1E992C36E84000E3FF4D /* HomeView.swift in Sources */,
 				A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */,
 				A22A1EB22C373F0500E3FF4D /* ProfileView.swift in Sources */,
