@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SegmentInfoView: View {
-    let segments = ["About Me","Interests", "Events"]
+    @State var segments = [String]()
     @Binding var selectedSegment: Int
     var body: some View {
         GeometryReader { geometry in
@@ -54,5 +54,5 @@ struct SegmentButton: View {
 }
 
 #Preview {
-    SegmentInfoView(selectedSegment: .constant(0))
+    SegmentInfoView(segments: ["About Me","Interests", "Events"], selectedSegment: .constant(0))
 }

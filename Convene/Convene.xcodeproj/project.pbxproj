@@ -31,6 +31,7 @@
 		A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */; };
 		A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F072C38660300E3FF4D /* EventViewModel.swift */; };
 		A22A1F0A2C399A2800E3FF4D /* EventGuestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F092C399A2800E3FF4D /* EventGuestView.swift */; };
+		A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 		A22A1F072C38660300E3FF4D /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
 		A22A1F092C399A2800E3FF4D /* EventGuestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventGuestView.swift; sourceTree = "<group>"; };
+		A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEventView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -277,6 +279,7 @@
 			children = (
 				A22A1F042C3864FD00E3FF4D /* CreateEventView.swift */,
 				A22A1F092C399A2800E3FF4D /* EventGuestView.swift */,
+				A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22A1E992C36E84000E3FF4D /* HomeView.swift in Sources */,
+				A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */,
 				A22A1EB22C373F0500E3FF4D /* ProfileView.swift in Sources */,
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
 				A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */,

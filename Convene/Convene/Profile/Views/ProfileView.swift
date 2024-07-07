@@ -15,6 +15,12 @@ struct Profile {
     var events: [Event]
 }
 
+struct User: Codable {
+    var id = UUID()
+    var name: String
+    var image: String
+}
+
 struct Interest: Identifiable {
     let id = UUID()
     let name: String
@@ -24,12 +30,15 @@ struct Interest: Identifiable {
 
 struct Event: Identifiable {
     var id:UUID? = nil
+    var url: String? = nil
     var name: String
+    var description: String?
     var date: String
     var time: String
     var duration: String
     var location: String
     var guests: [Guest]
+    var createdBy: User
 }
 
 struct Guest: Identifiable {
@@ -55,9 +64,9 @@ struct ProfileView: View {
             Interest(name: "National Cuisine", isSelected: true, icon: "globe")
         ],
         events: [
-            Event(name: "Music Concert", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: []),
-            Event(name: "Art Workshop", date: "2024-07-15", time: "03:00", duration: "5 Hours", location: "", guests: []),
-            Event(name: "Food Festival", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [])
+            Event(name: "Music Concert", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
+            Event(name: "Art Workshop", date: "2024-07-15", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic")),
+            Event(name: "Food Festival", date: "2024-07-18", time: "03:00", duration: "5 Hours", location: "", guests: [], createdBy: User(name: "Steve Smith", image: "profile_pic"))
                ]
     )
     let segments = ["About Me","Interests", "Events"]
@@ -76,7 +85,7 @@ struct ProfileView: View {
                     
                     VStack {
 
-                        SegmentInfoView(selectedSegment: $selectedSegment) // Adjust height as needed
+                        SegmentInfoView(segments: ["About Me","Interests", "Events"], selectedSegment: $selectedSegment) // Adjust height as needed
 
                         if selectedSegment == 0 {
                                 AboutMeView(profile: profile)
