@@ -96,7 +96,7 @@ struct EventRow: View {
                     if selectedSegment == 0 {
                            EventDescriptionView(event: event)
                     } else if selectedSegment == 1 {
-                        
+                        EventParticipantView(event: event)
                     } else if selectedSegment == 2 {
                         
                     }
