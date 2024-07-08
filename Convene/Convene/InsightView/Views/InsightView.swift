@@ -1,5 +1,5 @@
 //
-//  HomeView.swift
+//  InsightView.swift
 //  Convene
 //
 //  Created by Sukhaman Singh on 7/4/24.
@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-struct HomeView: View {
+struct InsightView: View {
     let threads = [
-            Post(username: "Gimmy Nathan Jr.", time: "23 min ago", message: "What makes you stop taking risks? I’m always afraid of the consequences of my actions.", replies: 192)
+            Post(username: "Steven Smith", time: "23 min ago", message: "What makes you stop taking risks? I’m always afraid of the consequences of my actions.", replies: 192)
         ]
     @State private var isShowingDetailView = false
     var body: some View {
         NavigationStack {
             ScrollView {
                 VStack(alignment: .leading) {
-                    Text("Trending Events")
+                    Text("Insights")
                         .font(.title)
                         .padding(.horizontal)
                     
@@ -40,5 +40,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView()
+    InsightView()
 }

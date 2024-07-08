@@ -11,6 +11,7 @@ import SwiftUI
 struct TodayEventView: View {
     @StateObject private var viewModel = EventViewModel()
     @State var isShowProfileScreen = false
+    @State var isShowPostScreen = false
     var body: some View {
         NavigationStack {
             VStack {
@@ -20,9 +21,12 @@ struct TodayEventView: View {
                         .padding()
 
                     Spacer()
-
-                    Image(systemName: "bell.fill")
-                        .foregroundColor(.red)
+                    Button(action: {
+                        isShowPostScreen.toggle()
+                    }, label: {
+                        Image(systemName: "bubble.right")
+                            .foregroundColor(.red)
+                    })
                         .padding()
                 }
                 
@@ -41,6 +45,9 @@ struct TodayEventView: View {
             .navigationBarTitle("Events")
             .navigationDestination(isPresented: $isShowProfileScreen) {
                        ProfileView()
+                        }
+            .navigationDestination(isPresented: $isShowPostScreen) {
+                       PostView(post: Post(username: "Freeman", time: " 23 mins ago", message: "You are what you do. What makes you stop taking risks? I'm always afraid of the consequences of my actions.", replies: 124))
                         }
         }
     }

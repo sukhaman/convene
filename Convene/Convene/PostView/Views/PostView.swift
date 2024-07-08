@@ -18,44 +18,57 @@ struct Post: Identifiable {
 struct PostView: View {
     let post: Post
     var body: some View {
-       
-        VStack(alignment: .leading) {
-            HStack {
-                // Replace "profile_image" with the actual profile image
-                ButtonWithImage(image: Image(systemName: "person.circle"), foregroundColor: .mint, backgrounColor: .white, action: {
-                    print("Show profile screen")
-                })
-                    .frame(width: 50, height: 50)
-                    .padding(.trailing,10)
+    @State var isShowProfileScreen = false
+        NavigationStack {
+            ZStack {
                 VStack(alignment: .leading) {
-                    Text(post.username)
-                        .font(.headline)
-                    Text(post.time)
-                        .font(.subheadline)
+                    HStack {
+                        // Replace "profile_image" with the actual profile image
+                        Button(action: {
+                            isShowProfileScreen.toggle()
+                        }, label: {
+                            Image("profile_pic")
+                            .resizable()
+                            .clipShape(Circle())
+                            .frame(width:50,height: 50)
+                            .padding()
+                            .shadow(color: Color.gray.opacity(0.5), radius: 5, x: 0, y: 2)
+                        })
+                        .padding(.trailing,10)
+                        VStack(alignment: .leading) {
+                            Text(post.username)
+                                .font(.headline)
+                            Text(post.time)
+                                .font(.subheadline)
+                        }
+                        Spacer()
+                        Image(systemName: "flame.fill")
+                            .foregroundColor(.red)
+                    }
+                    Text(post.message)
+                        .font(.body)
+                        .padding(.vertical, 5)
+                    HStack {
+                        ButtonWithImage(image: Image(systemName: "hand.thumbsup"),foregroundColor: .black, backgrounColor: .white) {
+                            print("Post liked")
+                        }
+                        ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red, backgrounColor: .white) {
+                            print("Post disliked")
+                        }
+                        Spacer()
+                        ButtonWithTextImage(image: Image(systemName: "message.badge.waveform"),text: "\(post.replies) Replies", imageColor: .purple, textColor: .black) {
+                            print("Show replies")
+                        }
+                    }
                 }
-                Spacer()
-                Image(systemName: "flame.fill")
-                    .foregroundColor(.red)
+                .padding()
+                .background(Color(.systemGray6))
+            .cornerRadius(10)
             }
-            Text(post.message)
-                .font(.body)
-                .padding(.vertical, 5)
-            HStack {
-                ButtonWithImage(image: Image(systemName: "hand.thumbsup"),foregroundColor: .black, backgrounColor: .white) {
-                    print("Post liked")
-                }
-                ButtonWithImage(image: Image(systemName: "hand.thumbsdown"),foregroundColor: .red, backgrounColor: .white) {
-                    print("Post disliked")
-                }
-                Spacer()
-                ButtonWithTextImage(image: Image(systemName: "message.badge.waveform"),text: "\(post.replies) Replies", imageColor: .purple, textColor: .black) {
-                    print("Show replies")
-                }
-            }
+            .navigationDestination(isPresented: $isShowProfileScreen) {
+                       ProfileView()
+                        }
         }
-        .padding()
-        .background(Color(.systemGray6))
-        .cornerRadius(10)
     }
 }
 

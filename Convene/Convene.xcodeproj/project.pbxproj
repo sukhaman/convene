@@ -15,9 +15,9 @@
 		A22A1E852C36E36C00E3FF4D /* ConveneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E842C36E36C00E3FF4D /* ConveneUITests.swift */; };
 		A22A1E872C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E862C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift */; };
 		A22A1E942C36E6BD00E3FF4D /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A22A1E932C36E6BD00E3FF4D /* Colors.xcassets */; };
-		A22A1E992C36E84000E3FF4D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E982C36E84000E3FF4D /* HomeView.swift */; };
+		A22A1E992C36E84000E3FF4D /* InsightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E982C36E84000E3FF4D /* InsightView.swift */; };
 		A22A1E9C2C36E97B00E3FF4D /* ViewInspector in Frameworks */ = {isa = PBXBuildFile; productRef = A22A1E9B2C36E97B00E3FF4D /* ViewInspector */; };
-		A22A1E9F2C36E99800E3FF4D /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */; };
+		A22A1E9F2C36E99800E3FF4D /* InsightViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1E9E2C36E99800E3FF4D /* InsightViewTests.swift */; };
 		A22A1EA32C36ECCD00E3FF4D /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA22C36ECCD00E3FF4D /* PostView.swift */; };
 		A22A1EA62C36EEDD00E3FF4D /* ButtonWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA52C36EEDD00E3FF4D /* ButtonWithImage.swift */; };
 		A22A1EA82C36F3CD00E3FF4D /* ButtonWithTextImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */; };
@@ -67,8 +67,8 @@
 		A22A1E842C36E36C00E3FF4D /* ConveneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveneUITests.swift; sourceTree = "<group>"; };
 		A22A1E862C36E36C00E3FF4D /* ConveneUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConveneUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A22A1E932C36E6BD00E3FF4D /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
-		A22A1E982C36E84000E3FF4D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		A22A1E982C36E84000E3FF4D /* InsightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightView.swift; sourceTree = "<group>"; };
+		A22A1E9E2C36E99800E3FF4D /* InsightViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightViewTests.swift; sourceTree = "<group>"; };
 		A22A1EA22C36ECCD00E3FF4D /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		A22A1EA52C36EEDD00E3FF4D /* ButtonWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithImage.swift; sourceTree = "<group>"; };
 		A22A1EA72C36F3CD00E3FF4D /* ButtonWithTextImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithTextImage.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				A22A1EA92C36FEF000E3FF4D /* Preferences */,
 				A22A1EA42C36EEC400E3FF4D /* Views */,
 				A22A1EA02C36EC0B00E3FF4D /* PostView */,
-				A22A1E962C36E82F00E3FF4D /* HomeView */,
+				A22A1E962C36E82F00E3FF4D /* InsightView */,
 				A22A1E952C36E77000E3FF4D /* SupportingFiles */,
 				A22A1E6F2C36E36C00E3FF4D /* Preview Content */,
 			);
@@ -187,18 +187,18 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
-		A22A1E962C36E82F00E3FF4D /* HomeView */ = {
+		A22A1E962C36E82F00E3FF4D /* InsightView */ = {
 			isa = PBXGroup;
 			children = (
 				A22A1E972C36E83300E3FF4D /* Views */,
 			);
-			path = HomeView;
+			path = InsightView;
 			sourceTree = "<group>";
 		};
 		A22A1E972C36E83300E3FF4D /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A22A1E982C36E84000E3FF4D /* HomeView.swift */,
+				A22A1E982C36E84000E3FF4D /* InsightView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -206,7 +206,7 @@
 		A22A1E9D2C36E98300E3FF4D /* HomeView */ = {
 			isa = PBXGroup;
 			children = (
-				A22A1E9E2C36E99800E3FF4D /* HomeViewTests.swift */,
+				A22A1E9E2C36E99800E3FF4D /* InsightViewTests.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -443,7 +443,7 @@
 			files = (
 				A22A1F0E2C3B2BF400E3FF4D /* EventDescriptionView.swift in Sources */,
 				A22A1F142C3B538E00E3FF4D /* EventScheduleView.swift in Sources */,
-				A22A1E992C36E84000E3FF4D /* HomeView.swift in Sources */,
+				A22A1E992C36E84000E3FF4D /* InsightView.swift in Sources */,
 				A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */,
 				A22A1EB22C373F0500E3FF4D /* ProfileView.swift in Sources */,
 				A22A1E6C2C36E36800E3FF4D /* ContentView.swift in Sources */,
@@ -470,7 +470,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22A1E7B2C36E36C00E3FF4D /* ConveneTests.swift in Sources */,
-				A22A1E9F2C36E99800E3FF4D /* HomeViewTests.swift in Sources */,
+				A22A1E9F2C36E99800E3FF4D /* InsightViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
