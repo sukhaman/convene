@@ -39,6 +39,12 @@ struct Event: Identifiable {
     var location: String
     var guests: [Guest]
     var createdBy: User
+    var equipments: [Equipment]? = nil
+}
+
+struct Equipment: Identifiable {
+    var id: UUID?
+    var name: String
 }
 
 struct Guest: Identifiable {
@@ -57,7 +63,7 @@ struct ProfileView: View {
             Interest(name: "Workshop", isSelected: true, icon: "hammer"),
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),
             Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
-            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
+            Interest(name: "Observatory", isSelected: true, icon: "megaphone"),
             Interest(name: "Science Museum", isSelected: true, icon: "book"),
             Interest(name: "Workshop", isSelected: true, icon: "hammer"),
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),

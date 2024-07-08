@@ -36,7 +36,7 @@ struct InterestsView: View {
             Interest(name: "Workshop", isSelected: true, icon: "hammer"),
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),
             Interest(name: "National Cuisine", isSelected: true, icon: "globe"),
-            Interest(name: "Observatory", isSelected: true, icon: "telescope"),
+            Interest(name: "Observatory", isSelected: true, icon: "megaphone"),
             Interest(name: "Science Museum", isSelected: true, icon: "book"),
             Interest(name: "Workshop", isSelected: true, icon: "hammer"),
             Interest(name: "Café", isSelected: true, icon: "fork.knife"),

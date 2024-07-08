@@ -34,6 +34,8 @@
 		A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */; };
 		A22A1F0E2C3B2BF400E3FF4D /* EventDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */; };
 		A22A1F102C3B2CB000E3FF4D /* EventParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0F2C3B2CB000E3FF4D /* EventParticipantView.swift */; };
+		A22A1F122C3B3FE600E3FF4D /* EquipmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F112C3B3FE600E3FF4D /* EquipmentListView.swift */; };
+		A22A1F142C3B538E00E3FF4D /* EventScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F132C3B538E00E3FF4D /* EventScheduleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEventView.swift; sourceTree = "<group>"; };
 		A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDescriptionView.swift; sourceTree = "<group>"; };
 		A22A1F0F2C3B2CB000E3FF4D /* EventParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParticipantView.swift; sourceTree = "<group>"; };
+		A22A1F112C3B3FE600E3FF4D /* EquipmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListView.swift; sourceTree = "<group>"; };
+		A22A1F132C3B538E00E3FF4D /* EventScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScheduleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +290,8 @@
 				A22A1F0B2C39F4BA00E3FF4D /* TodayEventView.swift */,
 				A22A1F0D2C3B2BF400E3FF4D /* EventDescriptionView.swift */,
 				A22A1F0F2C3B2CB000E3FF4D /* EventParticipantView.swift */,
+				A22A1F112C3B3FE600E3FF4D /* EquipmentListView.swift */,
+				A22A1F132C3B538E00E3FF4D /* EventScheduleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -436,6 +442,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A22A1F0E2C3B2BF400E3FF4D /* EventDescriptionView.swift in Sources */,
+				A22A1F142C3B538E00E3FF4D /* EventScheduleView.swift in Sources */,
 				A22A1E992C36E84000E3FF4D /* HomeView.swift in Sources */,
 				A22A1F0C2C39F4BA00E3FF4D /* TodayEventView.swift in Sources */,
 				A22A1EB22C373F0500E3FF4D /* ProfileView.swift in Sources */,
@@ -452,6 +459,7 @@
 				A22A1F102C3B2CB000E3FF4D /* EventParticipantView.swift in Sources */,
 				A22A1EFD2C385F6900E3FF4D /* InterestsView.swift in Sources */,
 				A22A1EAC2C37000400E3FF4D /* PreferenceView.swift in Sources */,
+				A22A1F122C3B3FE600E3FF4D /* EquipmentListView.swift in Sources */,
 				A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */,
 				A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */,
 			);
