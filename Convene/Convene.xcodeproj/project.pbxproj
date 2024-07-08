@@ -36,6 +36,8 @@
 		A22A1F102C3B2CB000E3FF4D /* EventParticipantView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F0F2C3B2CB000E3FF4D /* EventParticipantView.swift */; };
 		A22A1F122C3B3FE600E3FF4D /* EquipmentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F112C3B3FE600E3FF4D /* EquipmentListView.swift */; };
 		A22A1F142C3B538E00E3FF4D /* EventScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F132C3B538E00E3FF4D /* EventScheduleView.swift */; };
+		A22A1F182C3B81F500E3FF4D /* ReplyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F172C3B81F500E3FF4D /* ReplyView.swift */; };
+		A22A1F1C2C3B830600E3FF4D /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22A1F1B2C3B830600E3FF4D /* PostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,8 @@
 		A22A1F0F2C3B2CB000E3FF4D /* EventParticipantView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventParticipantView.swift; sourceTree = "<group>"; };
 		A22A1F112C3B3FE600E3FF4D /* EquipmentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentListView.swift; sourceTree = "<group>"; };
 		A22A1F132C3B538E00E3FF4D /* EventScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScheduleView.swift; sourceTree = "<group>"; };
+		A22A1F172C3B81F500E3FF4D /* ReplyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyView.swift; sourceTree = "<group>"; };
+		A22A1F1B2C3B830600E3FF4D /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +142,7 @@
 		A22A1E682C36E36800E3FF4D /* Convene */ = {
 			isa = PBXGroup;
 			children = (
+				A22A1F152C3B81DC00E3FF4D /* ReplyView */,
 				A22A1F022C3864B100E3FF4D /* Event */,
 				A22A1EAF2C373EA000E3FF4D /* Profile */,
 				A22A1EA92C36FEF000E3FF4D /* Preferences */,
@@ -214,6 +219,7 @@
 		A22A1EA02C36EC0B00E3FF4D /* PostView */ = {
 			isa = PBXGroup;
 			children = (
+				A22A1F1A2C3B82F300E3FF4D /* ViewModel */,
 				A22A1EA12C36ECBE00E3FF4D /* Views */,
 			);
 			path = PostView;
@@ -300,6 +306,30 @@
 			isa = PBXGroup;
 			children = (
 				A22A1F072C38660300E3FF4D /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A22A1F152C3B81DC00E3FF4D /* ReplyView */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F162C3B81EA00E3FF4D /* Views */,
+			);
+			path = ReplyView;
+			sourceTree = "<group>";
+		};
+		A22A1F162C3B81EA00E3FF4D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F172C3B81F500E3FF4D /* ReplyView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A22A1F1A2C3B82F300E3FF4D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A22A1F1B2C3B830600E3FF4D /* PostViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -458,7 +488,9 @@
 				A22A1EFB2C385EE100E3FF4D /* AboutMeView.swift in Sources */,
 				A22A1F102C3B2CB000E3FF4D /* EventParticipantView.swift in Sources */,
 				A22A1EFD2C385F6900E3FF4D /* InterestsView.swift in Sources */,
+				A22A1F182C3B81F500E3FF4D /* ReplyView.swift in Sources */,
 				A22A1EAC2C37000400E3FF4D /* PreferenceView.swift in Sources */,
+				A22A1F1C2C3B830600E3FF4D /* PostViewModel.swift in Sources */,
 				A22A1F122C3B3FE600E3FF4D /* EquipmentListView.swift in Sources */,
 				A22A1F082C38660300E3FF4D /* EventViewModel.swift in Sources */,
 				A22A1F052C3864FD00E3FF4D /* CreateEventView.swift in Sources */,
